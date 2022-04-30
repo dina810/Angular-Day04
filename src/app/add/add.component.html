@@ -1,0 +1,23 @@
+
+<div class="container">
+  <h1 style="color: blue;"> Hello from add department</h1>
+     <form>
+        <div class="mb-3 mt-3">
+          <label class="form-label">ID</label>
+          <input type="text"  class="form-control" name="id" [(ngModel)]="department.id">
+        </div>
+        <div class="mb-3 mt-3">
+          <label class="form-label">Department Name</label>
+          <input type="text"  class="form-control" name="name" [(ngModel)]="department.deptname">
+        </div>
+      
+
+  
+        <div class="mb-3 mt-3">
+          <label class="form-label">Department location</label>
+          <input type="text"  class="form-control" name="location" [(ngModel)]="department.location">
+        </div>
+      
+        <button (click)="add()" type="submit" class="btn btn-primary">Submit</button>
+      </form> 
+      

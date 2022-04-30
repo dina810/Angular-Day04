@@ -1,0 +1,24 @@
+<h1>Hello from  about</h1>
+
+<table class="table w-75  m-auto">
+    <thead>
+      <tr>
+          <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of aboutUsers">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.age}}</td>
+        <td>{{user.gender}}</td>
+        <td>{{user.salary}}</td>
+        
+      </tr>
+
+    </tbody>
+  </table>

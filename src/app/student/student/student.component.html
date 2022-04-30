@@ -1,0 +1,50 @@
+<div class="container">
+
+
+        <h1 class="text align-center" style="color: brown;">Hello from Student</h1>
+
+<table class="table w-75  m-auto">
+    <thead>
+      <tr>
+          <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of homeUsers">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.age}}</td>
+        <td>{{user.gender}}</td>
+        <td>{{user.salary}}</td>
+        
+      </tr>
+
+    </tbody>
+  </table>
+
+
+
+
+
+
+<!-- <h1 [style.color]="onSale ==true?'red':'green'">sssss</h1> -->
+
+
+<!-- <div class="container">
+    <input [(ngModel)]="x" type="text" class="form-control">
+    <h1>{{x}}</h1>
+
+</div> -->
+
+
+<!-- <button class="btn btn-success" (click)="hello()">welcom </button> -->
+<!-- <div class="container">
+    <input (keyup.shift.x)="welcome($event)"  type="text" class="form-control" 
+    >
+
+</div> -->
+      

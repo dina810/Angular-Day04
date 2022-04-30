@@ -1,0 +1,37 @@
+<div class="container m-auto text-center">
+    <table class="table table-striped w-75 m-auto text-center">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Department Name</th>
+          <th>Location</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let dept of departmentUsers">
+          <td>{{ dept.id }}</td>
+          <td>{{ dept.deptname }}</td>
+          <td>{{ dept.location }}</td>
+          <td>
+          <a  class="btn btn-success mx-3 btn-md" [routerLink]="['/department/show',dept.id]">
+            Show
+          </a>
+
+          <a class="btn btn-info mx-3 btn-md" [routerLink]="['/department/edit',dept.id]">
+            Edit
+          </a>
+          
+          <a class="btn btn-danger mx-3 btn-md" (click)="delete(dept.id)">Delete</a>
+
+
+          
+        </td>
+      </tr>
+    </tbody>
+</table>
+<br>
+<button  type="button" class="btn btn-primary mx-3 btn-md" routerLink="add">
+  Add Department
+</button>
+          
